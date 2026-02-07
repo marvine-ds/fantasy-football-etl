@@ -1,4 +1,4 @@
--- Create database
+--Create database
 CREATE DATABASE IF NOT EXISTS fantasy_football;
 USE fantasy_football;
 
