@@ -50,15 +50,49 @@ def clean_players(df):
 
     return players
 
+def clean_events(df):
+    """
+    Clean events / gameweeks
+    """
+    events = df[[
+        "id",
+        "name",
+        "deadline_time",
+        "finished"
+    ]].copy()
+
+    events.rename(columns={
+        "id": "event_id"
+    }, inplace=True)
+
+    # Extract integer gameweek from "Gameweek X"
+    events["gameweek"] = events["name"].str.extract(r"(\d+)").astype(int)
+
+    # Convert ISO datetime string to MySQL-friendly datetime
+    events["deadline_time"] = (
+        pd.to_datetime(events["deadline_time"], utc=True)
+          .dt.tz_convert(None)
+    )
+
+    # Drop original name column
+    events.drop(columns=["name"], inplace=True)
+
+    return events
+
+
+
+
 if __name__ == "__main__":
     from api_fetch import fetch_api_data
-    from raw_to_df import extract_teams, extract_players
+    from raw_to_df import extract_teams, extract_players,extract_events
 
     raw = fetch_api_data()
 
     teams_df = clean_teams(extract_teams(raw))
     players_df = clean_players(extract_players(raw))
+    events_df = clean_events(extract_events(raw))
 
     print(teams_df.head())
     print(players_df.head())
+    print(events_df.head())
 
