@@ -47,3 +47,22 @@ if __name__ == "__main__":
     players_df = clean_players(extract_players(raw))
     insert_dataframe(players_df, "players")
     print("Players loaded")
+
+def insert_facts(df):
+    print("Inserting player gameweek facts")
+    conn = get_connection()
+    cursor = conn.cursor()
+
+    sql = """
+    INSERT IGNORE INTO player_gameweek_stats
+    (player_id, event_id, points, minutes)
+    VALUES (%s, %s, %s, %s)
+    """
+
+    for _, row in df.iterrows():
+        cursor.execute(sql, tuple(row))
+
+    conn.commit()
+    cursor.close()
+    conn.close()
+    
