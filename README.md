@@ -177,6 +177,14 @@ It includes:
 This page functions as a decision funnel, moving from context → evaluation → selection.
 
 ---
+## Dashboard Preview
+
+📄 Full dashboard report available here:
+[Download PDF](http://localhost:3000/public/dashboard/6bf5a01e-50ae-49f8-87dd-83910cd16f8c)
+
+
+
+---
 
 ## Design Philosophy
 
