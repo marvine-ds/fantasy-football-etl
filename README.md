@@ -179,9 +179,11 @@ This page functions as a decision funnel, moving from context → evaluation →
 ---
 ## Dashboard Preview
 
-📄 Full dashboard report available here:
- ## Dashboard Report (PDF)
-📄 [Download Player Selection Dashboard (PDF)](reports/metabase_player_selection_dashboard.pdf?raw=true)
+![Player Selection Dashboard](dashboards/player_selection_preview.png)
+
+📄 Download full dashboard report:
+[PDF](reports/metabase_player_selection_dashboard.pdf?raw=true)
+
 
 
 
