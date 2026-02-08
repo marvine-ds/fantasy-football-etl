@@ -134,8 +134,8 @@ Players are classified as **Elite FPL Picks** if they meet all of the following:
 
 - high value (above-average points per £)  
 - high impact (above-average PP90)  
-- reliable minutes and appearances  
-- strong total point contribution  
+- reliable minutes and appearances (above 1700 minutes) 
+- strong total point contribution (above 100 points) 
 
 This progressively narrows the player pool from hundreds of players to a high-confidence shortlist.
 
