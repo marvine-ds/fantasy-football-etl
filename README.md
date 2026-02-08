@@ -223,6 +223,8 @@ http://localhost:3000/public/dashboard/6bf5a01e-50ae-49f8-87dd-83910cd16f8c
 
 ## Final Note
 
-This project demonstrates how raw sports data can be transformed into a business-style decision support system, applying investment logic to player selection under budget constraints.
+The final table, Elite FPL Picks, presents a shortlist of the best 15 optimal players based on a combination of value, impact, reliability, and sustained performance.
 
-It moves beyond surface-level statistics and provides a structured framework for building competitive FPL squads.
+These players have accumulated over 100 points while only approximately 63% of the gameweeks have been played, indicating strong early-season efficiency. Each player has logged more than 1,700 minutes, signaling a high probability of consistent selection and reduced rotation risk.
+
+The shortlist prioritizes players who demonstrate high points per 90 minutes, strong total point output, and, in several cases, cost efficiency relative to performance. Together, these criteria identify players who maximize returns while minimizing risk, making them suitable core assets for squad construction.
