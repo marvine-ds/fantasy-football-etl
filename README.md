@@ -87,6 +87,19 @@ This layer provides:
 
 All core business logic is implemented using SQL views in MySQL.  
 This ensures metrics are defined once, consistently, and reused across all analyses.
+### SQL Models Repository
+
+All SQL logic used to power the dashboards is stored in the `sql/` directory of this repository.
+
+These SQL files define reusable analytical views for:
+- player value rankings (Points per £)
+- player impact rankings (PP90)
+- minutes-based reliability filtering
+- elite player classification logic
+
+The Metabase dashboards consume these SQL views directly, ensuring consistency between
+data, business logic, and visualization.
+
 
 ### Value (ROI)
 
