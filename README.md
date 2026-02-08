@@ -181,6 +181,9 @@ This page functions as a decision funnel, moving from context → evaluation →
 
 📄 [Download Player Selection Dashboard (PDF)](http://localhost:3000/public/dashboard/6bf5a01e-50ae-49f8-87dd-83910cd16f8c)
 
+📄 [Download Player Selection Dashboard (PDF)](reports/metabase_player_selection_dashboard.pdf?raw=true)
+
+
 
 
 
