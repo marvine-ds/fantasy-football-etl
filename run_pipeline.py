@@ -25,3 +25,4 @@ def run_gameweek_history_load():
 
 if __name__ == "__main__":
     run_gameweek_history_load()
+
