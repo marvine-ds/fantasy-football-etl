@@ -199,8 +199,9 @@ All metrics exclude zero-minute players and prioritize averages where fairness a
 
 ## Dashboard Report
 
-[Download Player Selection Dashboard (PDF)](reports/metabase_player_selection_dashboard.pdf(3))
-[Download Player Selection Dashboard (PDF)](reports/metabase_player_selection_dashboard.pdf(4))
+[Download Player Selection Dashboard (PDF)](reports/Metabase_Player_Selection_Dashboard.pdf)
+
+[Download Gameweek Trends Dashboard (PDF)](reports/Metabase_Gameweek_Trends_Dashboard.pdf)
 
 
 Live Dashboard (Metabase):  
