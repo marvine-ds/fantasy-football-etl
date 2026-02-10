@@ -207,7 +207,24 @@ All metrics exclude zero-minute players and prioritize averages where fairness a
 Live Dashboard (Metabase):  
 http://localhost:3000/public/dashboard/6bf5a01e-50ae-49f8-87dd-83910cd16f8c
 ---
+## Automation and Scheduling
 
+To ensure the dataset remains up to date throughout the season, the entire ETL pipeline is automated using Windows Task Scheduler.
+
+The automation is configured to run every Friday morning, aligning with Fantasy Premier League gameweek updates and ensuring that newly completed matches and gameweeks are ingested promptly.
+
+The scheduled task performs the following steps:
+
+- Executes the Python ETL scripts responsible for data extraction, cleaning, and transformation
+- Updates dimension tables (players, teams, events) to reflect the current season state
+- Appends new player-gameweek records into the fact table without overwriting historical data
+- Safely ignores duplicate records to allow idempotent re-runs
+
+This design ensures that the pipeline can be executed repeatedly without manual intervention while preserving historical integrity.
+
+By automating data ingestion and updates, the dashboards in Metabase always reflect the most recent completed gameweek, allowing for continuous analysis and decision-making across the season.
+
+---
 ## Design Philosophy
 
 - Logic-first: business logic is defined at the database level
