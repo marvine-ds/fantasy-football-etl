@@ -204,8 +204,9 @@ All metrics exclude zero-minute players and prioritize averages where fairness a
 [Download Gameweek Trends Dashboard (PDF)](reports/Metabase_Gameweek_Trends_Dashboard.pdf)
 
 
-Live Dashboard (Metabase):  
-http://localhost:3000/public/dashboard/6bf5a01e-50ae-49f8-87dd-83910cd16f8c
+Interactive Dashboard (Metabase):  
+[Open Dashboard](http://localhost:3000/public/dashboard/6bf5a01e-50ae-49f8-87dd-83910cd16f8c)
+
 ---
 ## Automation and Scheduling
 
