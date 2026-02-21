@@ -5,10 +5,9 @@ API_URL = "https://fantasy.premierleague.com/api/bootstrap-static/"
 
 # Database configuration
 DB_CONFIG = {
-    "host": "127.0.0.1",
+    "host": "localhost",  
     "port": 3306,
     "user": "root",
-    "password": "rootpass",
+    "password": "Marvine23#",
     "database": "fantasy_football"
 }
-
